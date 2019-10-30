@@ -3,8 +3,6 @@
 int main()
 {
 	int a[N];	
-	struct avg k;
-	urand(a,N);
-	k=
+	urand(a);
 	return 0;	
 }

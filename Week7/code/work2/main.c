@@ -16,6 +16,7 @@ int main()
 	switch(a)
 	{
 		case '0':
+			close(fd);
 			exit(0);
 			break;	
 		case '1':
@@ -41,11 +42,18 @@ int main()
 	}
 
 
-
-
-
-
-
-
-
 }
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+

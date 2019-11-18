@@ -7,6 +7,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+#define MAX 128
+
 void CreateNewFile();//创建新文件
 void WriteFile();//写文件
 void ReadFile();//读文件

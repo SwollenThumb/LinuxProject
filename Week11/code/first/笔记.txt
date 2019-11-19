@@ -1,0 +1,20 @@
+失败
+子进程
+父进程
+
+zombie//僵尸进程
+
+https://www.cnblogs.com/findbetterme/p/10705133.html
+ps 为我们提供了进程的一次性的查看，它所提供的查看结果并不动态连续的；
+如果想对进程时间监控，可以用 top 工具。
+grep（global search regular expression(RE) and print out the line,全面搜索正则表达式并把行打印出来）
+是一种强大的文本搜索工具，它能使用正则表达式搜索文本，并把匹配的行打印出来。
+
+ps aux | grep test1//查看程序test1的所有进程
+
+ps ef | grep test1//
+
+kill -9 2262//杀死进程
+
+
+termsig

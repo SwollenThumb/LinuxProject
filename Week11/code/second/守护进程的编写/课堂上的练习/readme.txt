@@ -7,3 +7,7 @@ ps aux | grep 6.8
 ps ef | grep 6.8
 
 kill
+
+
+tail -f /var/tmp/test.log
+ps aux | grep test

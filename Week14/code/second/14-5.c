@@ -2,10 +2,11 @@
 #define size 10
 
 int a[size],b[size];
-void* max_fun(int* arg)
+void max_fun(int* arg)
 {
 	int* ap=arg;
-	int rv,i,k=0;
+	int rv,i,k;
+	k=0;
 	for(i=1;i<size;i++)
 	{
 		if(ap[i]>ap[k])
@@ -34,9 +35,9 @@ int main()
 
 	pthread_join(tid1,(void**)&ptr1);
 	pthread_join(tid2,(void**)&ptr2);
-	printf("thread1's max value is: %d\n",**ptr1);
-	printf("thread2's max value is: %d\n",**ptr2);
-	printf("max value=%ls\n",(**ptr1)>(**ptr2)?(*ptr1):(*ptr2));
+	printf("thread1's max value is: %d\n",*ptr1);
+	printf("thread2's max value is: %d\n",*ptr2);
+	printf("max value=%ls\n",(*ptr1)>(*ptr2)?(*ptr1):(*ptr2));
 	exit(0);
 }
 
